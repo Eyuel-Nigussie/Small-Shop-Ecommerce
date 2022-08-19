@@ -22,7 +22,7 @@ Route::get('logout',function(){
     Session::forget('user');
     return redirect('/');
 });
-Route::post('/login',[UserController::class,'login']); //login button press sidereg endiqebel
+Route::post('/login',[UserController::class,'login']);
 Route::view('/register','register'); 
 Route::post('/signup',[UserController::class,'signup']); //signup button press sidereg endiqebel
 
