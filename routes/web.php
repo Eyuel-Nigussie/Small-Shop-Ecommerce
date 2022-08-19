@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Session;
 |
 */
 
-Route::get('login', function () {    //login selew browser lay login page endiwesdegn
+Route::get('login', function () {  
     return view('login');
 });
 Route::get('logout',function(){
@@ -23,7 +23,7 @@ Route::get('logout',function(){
     return redirect('/');
 });
 Route::post('/login',[UserController::class,'login']); //login button press sidereg endiqebel
-Route::view('/register','register'); //register from login
+Route::view('/register','register'); 
 Route::post('/signup',[UserController::class,'signup']); //signup button press sidereg endiqebel
 
 
