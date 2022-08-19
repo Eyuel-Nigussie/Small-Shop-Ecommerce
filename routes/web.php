@@ -24,7 +24,7 @@ Route::get('logout',function(){
 });
 Route::post('/login',[UserController::class,'login']);
 Route::view('/register','register'); 
-Route::post('/signup',[UserController::class,'signup']); //signup button press sidereg endiqebel
+Route::post('/signup',[UserController::class,'signup']); 
 
 
 Route::get('/',[ProductController::class,'index']); //home page
